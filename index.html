@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,23 +31,37 @@
             font-family: 'Inter', sans-serif;
             background-color: #0f0f0f;
         }
+
         .btn-gradient {
             background: linear-gradient(90deg, #DC2626, #EF4444);
             transition: all 0.3s ease;
         }
+
         .btn-gradient:hover {
             opacity: 0.9;
             transform: translateY(-2px);
         }
+
         .price-badge {
             animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
+
         @keyframes pulse-ring {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(1.05); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
         }
     </style>
 </head>
+
 <body class="text-gray-100">
 
     <!-- Header -->
@@ -55,7 +70,8 @@
             <h1 class="text-3xl font-bold text-accent-red tracking-wider">
                 Abidi Store
             </h1>
-            <a href="#order-form" class="bg-accent-red px-5 py-2 rounded-lg text-lg font-semibold hover:bg-red-700 transition duration-300 hidden sm:block">
+            <a href="#order-form"
+                class="bg-accent-red px-5 py-2 rounded-lg text-lg font-semibold hover:bg-red-700 transition duration-300 hidden sm:block">
                 اطلب الآن
             </a>
         </div>
@@ -65,11 +81,8 @@
     <section class="max-w-7xl mx-auto py-12 md:py-20 px-4">
         <div class="flex flex-col lg:flex-row-reverse items-center gap-10">
             <div class="lg:w-1/2 w-full flex justify-center relative">
-                <img 
-                    src="1.jpg" 
-                    alt="سماعات AirPods Pro وشاحن 20W هدية" 
-                    class="rounded-xl shadow-2xl w-full max-w-sm md:max-w-md border border-gray-700/50"
-                >
+                <img src="1.jpg" alt="سماعات AirPods Pro وشاحن 20W هدية"
+                    class="rounded-xl shadow-2xl w-full max-w-sm md:max-w-md border border-gray-700/50">
             </div>
 
             <div class="lg:w-1/2 w-full text-center lg:text-right">
@@ -85,35 +98,171 @@
                 <div class="flex items-center justify-center lg:justify-start mb-8 space-x-4 space-x-reverse">
                     <span class="text-6xl font-black text-accent-red leading-none">45</span>
                     <span class="text-3xl font-bold text-gray-300">دينار</span>
-                    <span class="bg-accent-red price-badge text-white text-sm font-bold py-1 px-3 rounded-full shadow-lg">
+                    <span
+                        class="bg-accent-red price-badge text-white text-sm font-bold py-1 px-3 rounded-full shadow-lg">
                         عرض محدود
                     </span>
                 </div>
 
                 <ul class="text-lg text-gray-300 space-y-3 mb-10 text-right inline-block lg:block">
                     <li class="flex items-center space-x-2 space-x-reverse">
-                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                         <span>جودة صوت عالية الوضوح وعزل ضوضاء فعال.</span>
                     </li>
                     <li class="flex items-center space-x-2 space-x-reverse">
-                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                         <span>شاحن جداري 20W مجاني.</span>
                     </li>
                     <li class="flex items-center space-x-2 space-x-reverse">
-                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                         <span>الدفع عند الاستلام.</span>
                     </li>
                     <li class="flex items-center space-x-2 space-x-reverse">
-                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-6 h-6 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                         <span>توصيل سريع إلى جميع أنحاء البلاد.</span>
                     </li>
                 </ul>
 
-                <a href="#order-form" class="inline-block w-full sm:w-auto px-12 py-4 btn-gradient text-white text-xl font-bold rounded-xl shadow-2xl uppercase">
+                <a href="#order-form"
+                    class="inline-block w-full sm:w-auto px-12 py-4 btn-gradient text-white text-xl font-bold rounded-xl shadow-2xl uppercase">
                     أطلب عرض الـ 45 دينار الآن
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-primary-black px-4 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-10 text-gray-100">ماذا يقول عملاؤنا؟</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review Card 1 -->
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex space-x-1 space-x-reverse mb-3">
+                            <!-- Star Icons -->
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-300 italic mb-4">"جودة صوت ممتازة تفوق التوقعات! العرض مع الشاحن هدية لا
+                            يُعوض، والسعر 45 دينار هو الأفضل في السوق. شكراً جزيلاً لـ Abidi Store."</p>
+                    </div>
+                    <p class="text-sm font-semibold text-accent-red">- سارة م. (تونس العاصمة)</p>
+                </div>
+                <!-- Review Card 2 -->
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex space-x-1 space-x-reverse mb-3">
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                            <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-300 italic mb-4">"التوصيل كان أسرع مما توقعت، والمنتج مطابق للوصف تمامًا.
+                            الشاحن الإضافي كان مكسب كبير. خدمة عملاء ممتازة وخصوصاً نظام الدفع عند التسليم المريح."</p>
+                    </div>
+                    <p class="text-sm font-semibold text-accent-red">- احمد قراش (جربة)</p>
+                </div> <!-- Review Card 3 -->
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex space-x-1 space-x-reverse mb-3"> <svg class="w-5 h-5 text-star-gold"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                            </svg> </div>
+                        <p class="text-gray-300 italic mb-4">"المنتج كما في الصور تماماً، جودة البناء ممتازة والبطارية
+                            تدوم طويلاً. الشاحن الإضافي يجعل هذا العرض أفضل صفقة رأيتها!"</p>
+                    </div>
+                    <p class="text-sm font-semibold text-accent-red">- محمد (سوسة)</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 flex flex-col justify-between">
+            <div>
+                <div class="flex space-x-1 space-x-reverse mb-3">
+                    <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                    </svg>
+                    <svg class="w-5 h-5 text-star-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.691h4.183c.969 0 1.371 1.24.588 1.81l-3.385 2.457a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.385-2.457a1 1 0 00-1.176 0l-3.385 2.457c-.785.57-1.84-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.245 9.385c-.783-.57-.381-1.81.588-1.81h4.183a1 1 0 00.95-.691l1.286-3.957z" />
+                    </svg>
+                </div>
+                <p class="text-gray-300 italic mb-4">"التوصيل كان أسرع مما توقعت ، والمنتج مطابق للوصف تمامًا.
+                    الشاحن الإضافي كان مكسب كبير."</p>
+            </div>
+            <p class="text-sm font-semibold text-accent-red">- (سيدي بوزيد)فارس حسناوي</p>
+        </div> <!-- Review Card 5 -->
     </section>
 
     <!-- Order Form -->
@@ -124,7 +273,8 @@
                 املأ البيانات واضغط على إرسال، وسنتواصل معك عبر WhatsApp لتأكيد الطلب.
             </p>
 
-            <form id="productOrderForm" class="space-y-6 bg-primary-black p-8 rounded-xl shadow-2xl border border-gray-800">
+            <form id="productOrderForm"
+                class="space-y-6 bg-primary-black p-8 rounded-xl shadow-2xl border border-gray-800">
                 <div>
                     <label for="fullName" class="block text-sm font-medium text-gray-300 mb-2">الاسم الكامل</label>
                     <input type="text" id="fullName" name="fullName" placeholder="الاسم واللقب" required
@@ -133,7 +283,8 @@
 
                 <div>
                     <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">رقم الهاتف</label>
-                    <input type="tel" id="phone" name="phone" placeholder="مثال: 92787304" required dir="ltr" style="text-align: left;"
+                    <input type="tel" id="phone" name="phone" placeholder="مثال: 92787304" required dir="ltr"
+                        style="text-align: left;"
                         class="w-full p-4 rounded-lg bg-gray-800 border border-gray-700 focus:border-accent-red text-white">
                 </div>
 
@@ -145,7 +296,8 @@
 
                 <div>
                     <label for="quantity" class="block text-sm font-medium text-gray-300 mb-2">الكمية</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1" required dir="ltr" style="text-align: center;"
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" required dir="ltr"
+                        style="text-align: center;"
                         class="w-full p-4 rounded-lg bg-gray-800 border border-gray-700 focus:border-accent-red text-white">
                 </div>
 
@@ -154,7 +306,8 @@
                     <p class="text-gray-300 font-bold">الدفع عند الاستلام فقط (45 دينار)</p>
                 </div>
 
-                <button type="submit" class="w-full btn-gradient text-white py-4 rounded-xl text-xl font-bold uppercase shadow-xl">
+                <button type="submit"
+                    class="w-full btn-gradient text-white py-4 rounded-xl text-xl font-bold uppercase shadow-xl">
                     تأكيد الطلب والدفع عند الاستلام
                 </button>
             </form>
@@ -167,15 +320,15 @@
 
     <!-- WhatsApp Script -->
     <script>
-    document.getElementById("productOrderForm").addEventListener("submit", function(e) {
-        e.preventDefault();
+        document.getElementById("productOrderForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-        const fullName = document.getElementById("fullName").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const address = document.getElementById("address").value.trim();
-        const quantity = document.getElementById("quantity").value.trim();
+            const fullName = document.getElementById("fullName").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const quantity = document.getElementById("quantity").value.trim();
 
-        const message = `🛍️ *طلب جديد من موقع Abidi Store*%0A
+            const message = `🛍️ *طلب جديد من موقع Abidi Store*%0A
 👤 الاسم الكامل: ${fullName}%0A
 📞 رقم الهاتف: ${phone}%0A
 📍 العنوان: ${address}%0A
@@ -184,14 +337,15 @@
 ------------------------%0A
 ✅ *طريقة الدفع:* عند الاستلام`;
 
-        const whatsappNumber = "21692787304";
-        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
-        window.open(whatsappURL, "_blank");
+            const whatsappNumber = "21692787304";
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+            window.open(whatsappURL, "_blank");
 
-        document.getElementById("successMessage").innerHTML =
-            "✅ تم إرسال طلبك إلى فريق Abidi Store عبر WhatsApp. سيتم التواصل معك قريباً!";
-        document.getElementById("responseContainer").classList.remove("hidden");
-    });
+            document.getElementById("successMessage").innerHTML =
+                "✅ تم إرسال طلبك إلى فريق Abidi Store عبر WhatsApp. سيتم التواصل معك قريباً!";
+            document.getElementById("responseContainer").classList.remove("hidden");
+        });
     </script>
 </body>
+
 </html>
